@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+    font-family: sans-serif;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    animation-name: boxanimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-delay: 3s; */
+}
+
+@keyframes boxanimation {
+    from {
+        background: rgb(0, 11, 128);
+        transform: translateX(0) translateY(250px) rotate(0deg)
+    }
+
+    to {
+        background-color: green;
+        transform: translateX(1200px) translateY(250px) rotate(360deg);
+    }
+}
+
